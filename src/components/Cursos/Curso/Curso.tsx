@@ -1,3 +1,4 @@
+import BotaoAmei from 'components/BotaoAmei/BotaoAmei'
 import cursos from '../../../data/cursos.json'
 import styles from './Curso.module.scss'
 
@@ -9,6 +10,7 @@ export default function Curso( {...curso}: props) {
         <div className={styles.curso}>
             <h3>{curso.nome} - {curso.data}</h3>
             <span>Insituição: {curso.escola} | Carga Horária: {curso.cargaHoraria}h</span>
+            <BotaoAmei/>
         </div>
     )
 }

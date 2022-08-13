@@ -1,11 +1,12 @@
 
+import Cabecalho from 'components/Cabecalho/Cabecalho'
 import Cursos from 'components/Cursos/Cursos'
-import style from './Inicial.module.scss'
+import styles from './Inicial.module.scss'
 
 export default function Inicial() {
     return (
-        <div className={style.inicial}>
-            <h1>Hello Word</h1>
+        <div className={styles.inicial}>
+            <Cabecalho/>
             <Cursos/>
         </div>
     )

@@ -1,10 +1,6 @@
 @import "styles/cores";
+@import "styles/container";
 
 .inicial {
-
-    h1 {
-        font-size: 2rem;
-        font-weight: bold;
-        color: $principal;
-    }
+    width: 100%;
 }

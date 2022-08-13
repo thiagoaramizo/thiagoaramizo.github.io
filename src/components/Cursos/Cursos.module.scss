@@ -1,7 +1,12 @@
 @import "styles/cores";
+@import "styles/container";
 
 .cursos {
-    margin: 20px 0;
+
+    margin: 20px auto;
+    width: 90%;
+    max-width: $container-width;
+
 
     h2 {
         font-size: 1.2rem;

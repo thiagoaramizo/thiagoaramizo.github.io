@@ -1,0 +1,93 @@
+@import "styles/cores";
+@import "styles/container";
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.cabecalho {
+
+    background-color: #555;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    background: linear-gradient(-45deg, $secundaria, #55555f, $secundaria);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    @media screen and (min-width:768px) {
+        height: 400px;
+    }
+    @media screen and (max-width:768px){
+        padding-bottom: 20px;
+    }
+
+
+    &__destaque {
+        width: 90%;
+        max-width: $container-width;
+        margin: 0 auto;
+        position: relative;
+
+        @media screen and (min-width:768px) {
+            min-height: 500px;
+            overflow: hidden;
+        }
+        
+        &__texto {
+
+            @media screen and (min-width:768px) {
+                width: 60%;
+                margin-top: 60px;
+            }
+            
+            @media screen and (max-width:768px) {
+                text-align: center;
+            }
+    
+            h1 {
+                font-size: 5rem;
+                font-weight: bold;
+                color: $principal;
+                padding-bottom: 20px;
+                background-image: linear-gradient(to right, #BFC7ED, #ABB6F3, #97A3FA);
+                background-clip: text;
+                -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+                -webkit-text-fill-color: transparent;
+                color: black;
+                @media screen and (max-width:768px) {
+                    font-size: 3rem;
+                }
+    
+            }
+    
+            p {
+                color: #fff;
+                line-height: 1.5rem;
+            }
+        }
+    
+        &__imagem {
+
+            @media screen and (min-width:768px) {
+                position: absolute;
+                top: -30px;
+                right: -40px;
+            }
+
+            @media screen and (max-width:768px) {
+                margin-top: -60px;
+                margin-left: -30px;
+            }
+            
+        }
+    
+    }
+}

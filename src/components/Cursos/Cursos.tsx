@@ -5,7 +5,7 @@ import styles from './Cursos.module.scss'
 export default function Cursos() {
 
     return (
-        <div className={styles.cursos}>
+        <section className={styles.cursos}>
             <h2>Formação complementar</h2>
 
             {
@@ -13,6 +13,6 @@ export default function Cursos() {
                     <Curso key={curso.id} {...curso}/>
                 ))
             }
-        </div>
+        </section>
     )
 }
