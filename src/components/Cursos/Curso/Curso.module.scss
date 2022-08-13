@@ -1,0 +1,15 @@
+@import "styles/cores";
+
+.curso {
+
+    margin: 20px 0;
+    border: 1px solid $principal;
+    padding: 10px;
+    border-radius: 5px;
+
+    h3 {
+        font-size: 1.1rem;
+        color: $secundaria;
+        margin-bottom: 10px;
+    }
+}
