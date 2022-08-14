@@ -4,7 +4,7 @@ import destaque from './destaque.json'
 export default function AnimacaoDestaque() {
     
     const defaultOptions = {
-        loop: true,
+        loop: false,
         autoplay: true, 
         animationData: destaque,
         rendererSettings: {

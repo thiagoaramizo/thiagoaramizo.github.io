@@ -10,8 +10,8 @@ export default function Cabecalho() {
                         <AnimacaoDestaque/>
                     </div>
                     <div className={styles.cabecalho__destaque__texto}>
-                        <h1 className={styles.cabecalho__destaque__titulo}>Thiago Aramizo</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris iaculis nisl ac mi pretium, vitae vestibulum diam pharetra. Donec nec ex ac est feugiat tincidunt ac sed tellus. Cras varius commodo sagittis. Sed facilisis tincidunt urna, non blandit dui. Curabitur feugiat porttitor turpis venenatis fermentum. Donec ut purus in neque tempus porta nec ac ipsum. Etiam imperdiet leo vitae nisl dignissim efficitur.</p>
+                        <h1 className={styles.cabecalho__destaque__titulo}>{'{thiagoAramizo}'}</h1>
+                        <span>//Desenvolvedor Front-End e UI Designer</span>
                         <Contato/>
                     </div>
                 </div>

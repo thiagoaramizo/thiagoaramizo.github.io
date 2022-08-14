@@ -2,12 +2,13 @@
 
 .contato {
 
-    background-color: $cinza;
+    background-color: white;
     border-radius: 8px;
     width: fit-content;
     display: block;
     margin: 40px 0;
     padding: 15px 25px 10px 25px;
+    border: 3px solid white;
     box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
 
     @media screen and (max-width:768px){
@@ -16,22 +17,25 @@
 
     &__texto {
         margin-bottom: 10px;
-        color: $secundaria;
+        color: $principal;
+        font-weight: 700;
     }
 
     &__icone {
         font-size: 40px;
-        color: $secundaria;
+        color: $principal;
+        transition: all 1s;  
     }
 
     &__icone:hover,
     &__icone:active {
-        color: $principal;
+        color: $secundaria;
     }
 
     a{
-        margin-right: 20px;   
+        margin-right: 15px;
     }
+
     a:last-child{
         margin-right: 0;
     } 

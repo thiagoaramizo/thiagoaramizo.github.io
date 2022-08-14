@@ -2,14 +2,44 @@
 
 .curso {
 
-    margin: 20px 0;
-    border: 1px solid $principal;
-    padding: 10px;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 3px solid $cinza;
+    padding: 20px 15px;
+    border-radius: 6px;
+    transition: all 1s;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+    }
 
     h3 {
-        font-size: 1.1rem;
-        color: $secundaria;
-        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $principal;
+        padding-bottom: 10px;
     }
+
+    &__info {
+        span {
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+
+        &__icone {
+            color: $secundaria;
+            font-size: 1.1em;
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    
+}
+
+.curso:hover {
+    border-color: $secundaria;
 }

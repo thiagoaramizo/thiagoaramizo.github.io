@@ -9,9 +9,23 @@
 
 
     h2 {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: $principal;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $secundaria-escuro;
+    }
+
+    &__lista{
+        margin: 20px 0;
     }
  
+}
+
+@media screen and (min-width:768px) {
+    .cursos {
+        &__lista {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }       
 }

@@ -14,5 +14,13 @@
         "data": "07/06/2020",
         "certificado": "https://google.com",
         "id": 1
+    },
+    {
+        "nome": "Curso sem certificado",
+        "escola": "Alura",
+        "cargaHoraria": 120,
+        "data": "07/08/2020",
+        "certificado": "",
+        "id": 3
     }
 ]

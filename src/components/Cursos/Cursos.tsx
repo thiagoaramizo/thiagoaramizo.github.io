@@ -6,13 +6,15 @@ export default function Cursos() {
 
     return (
         <section className={styles.cursos}>
-            <h2>Formação complementar</h2>
+            <h2>//Formação complementar ({cursos.length})</h2>
 
-            {
-                cursos.map( (curso) => (
-                    <Curso key={curso.id} {...curso}/>
-                ))
-            }
+            <div className={styles.cursos__lista}>
+                {
+                    cursos.map( (curso) => (
+                        <Curso key={curso.id} {...curso}/>
+                    ))
+                }
+            </div>
         </section>
     )
 }
